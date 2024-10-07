@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{83F841F7-94C6-4DA8-AD2A-07930E85C096}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce_backend", "Server\ecommerce_backend\ecommerce_backend.csproj", "{20C2CF90-AC6E-4175-B509-0B4F9C606393}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20C2CF90-AC6E-4175-B509-0B4F9C606393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C2CF90-AC6E-4175-B509-0B4F9C606393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C2CF90-AC6E-4175-B509-0B4F9C606393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C2CF90-AC6E-4175-B509-0B4F9C606393}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{20C2CF90-AC6E-4175-B509-0B4F9C606393} = {83F841F7-94C6-4DA8-AD2A-07930E85C096}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96DE9061-4DEF-40FF-AAD6-CBF8FA7FB658}
+	EndGlobalSection
+EndGlobal
