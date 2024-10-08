@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:elevation="2dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/product_card_background">
+
+    <!-- Product Name -->
+    <TextView
+        android:id="@+id/productNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingBottom="8dp" />
+
+    <!-- Product Price -->
+    <TextView
+        android:id="@+id/productPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: $0.00"
+        android:textSize="18sp"
+        android:textColor="@color/primary"
+        android:paddingBottom="8dp" />
+
+    <!-- Product Stocks -->
+    <TextView
+        android:id="@+id/productStocksTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock: 0"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:paddingBottom="8dp" />
+
+    <!-- Product Category -->
+    <TextView
+        android:id="@+id/productCategoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category: Unavailable"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:paddingBottom="8dp" />
+
+    <!-- Product Vendor Name -->
+    <TextView
+        android:id="@+id/productVendorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vendor: Unavailable"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:paddingBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</LinearLayout>
