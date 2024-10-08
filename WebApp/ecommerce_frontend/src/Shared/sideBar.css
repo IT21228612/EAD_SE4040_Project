@@ -1,0 +1,51 @@
+/* sideBar.css */
+
+/* Sidebar container */
+.sidebar {
+    width: 250px; /* Fixed width */
+    background-color: #343a40; /* Dark background for contrast */
+    color: white; /* Text color for visibility */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed; /* Stay in place when scrolling */
+  }
+  
+  /* Sidebar Header */
+  .sidebar-header {
+    background-color: #212529; /* Slightly different color to differentiate the header */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+  
+  /* Sidebar Links */
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: rgb(7, 7, 7); /* Text color for visibility */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.2s ease;
+    font-size: 1rem; /* Larger text size for better readability */
+  }
+  
+  .sidebar-link:hover {
+    background-color: #495057; /* Hover effect */
+  }
+  
+  /* Sidebar icons and text alignment */
+  .sidebar-link .me-3 {
+    margin-right: 10px;
+  }
+  
+  .sidebar-text {
+    font-size: 1.2rem; /* Slightly larger text for readability */
+  }
+  
+  /* Active link state */
+  .sidebar-link.active {
+    background-color: #6c757d;
+  }
+  

@@ -5,6 +5,17 @@ using WebServerWithMongoDB.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
+    });
+});
+
 // Bind MongoDB settings from appsettings.json
 builder.Services.Configure<MongoDBSettings>(
     builder.Configuration.GetSection(nameof(MongoDBSettings))
@@ -56,6 +67,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
+
+// Use CORS
+app.UseCors("AllowReactApp");
 
 // Configure the route endpoints
 app.MapControllers();
