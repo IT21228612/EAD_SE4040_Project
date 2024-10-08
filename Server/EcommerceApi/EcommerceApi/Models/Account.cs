@@ -1,4 +1,6 @@
-﻿namespace EcommerceApi.Models
+﻿//IT21319860
+//This file contains Model class of user Account
+namespace EcommerceApi.Models
 {
     public class Account
     {

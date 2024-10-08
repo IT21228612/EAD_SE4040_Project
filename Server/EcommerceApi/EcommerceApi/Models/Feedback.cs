@@ -1,4 +1,6 @@
-﻿namespace EcommerceApi.Models
+﻿//IT21319860
+//This file contains model lcass for Feedback
+namespace EcommerceApi.Models
 {
     public class Feedback
     {
